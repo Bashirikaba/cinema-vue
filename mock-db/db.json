@@ -1,0 +1,211 @@
+{
+    "categories": ["standard", "comfort", "premium"],
+    "priceMultipliers": [1.0, 1.3, 1.6],
+
+    "movies": [
+        {
+            "id": 1,
+            "title": "Начало",
+            "genre": "Сай-фай",
+            "ageRating": "12+",
+            "director": "Кристофер Нолан",
+            "screenwriter": "Кристофер Нолан",
+            "actors": [
+                "Леонардо ДиКаприо",
+                "Джозеф Гордон-Левитт",
+                "Эллен Пейдж"
+            ],
+            "synopsis": "Вор, крадущий секреты из снов, получает задание внедрить идею в разум бизнесмена. Но чем глубже он погружается, тем сильнее рискует потерять связь с реальностью.",
+            "trailerUrl": "https://www.youtube.com/embed/YoHD9XEInc0",
+            "posterUrl": "https://picsum.photos/seed/inception/300/450"
+        },
+        {
+            "id": 2,
+            "title": "Джокер",
+            "genre": "Драма",
+            "ageRating": "18+",
+            "director": "Тодд Филлипс",
+            "screenwriter": "Тодд Филлипс, Скотт Сильвер",
+            "actors": ["Хоакин Феникс", "Роберт Де Ниро", "Зази Битц"],
+            "synopsis": "История становления одного из самых известных злодеев комиксов — от неудачливого комика до символа хаоса в Готэме.",
+            "trailerUrl": "https://www.youtube.com/embed/zAGVQLHvwOY",
+            "posterUrl": "https://picsum.photos/seed/joker/300/450"
+        },
+        {
+            "id": 3,
+            "title": "Интерстеллар",
+            "genre": "Сай-фай",
+            "ageRating": "12+",
+            "director": "Кристофер Нолан",
+            "screenwriter": "Джонатан Нолан, Кристофер Нолан",
+            "actors": ["Мэттью МакКонахи", "Энн Хэтэуэй", "Джессика Честейн"],
+            "synopsis": "Группа исследователей отправляется сквозь червоточину в поисках нового дома для человечества, пока Земля становится непригодной для жизни.",
+            "trailerUrl": "https://www.youtube.com/embed/zSWdZVtXT7E",
+            "posterUrl": "https://picsum.photos/seed/interstellar/300/450"
+        },
+        {
+            "id": 4,
+            "title": "Дюна",
+            "genre": "Сай-фай",
+            "ageRating": "16+",
+            "director": "Дени Вильнёв",
+            "screenwriter": "Джон Спэйтс, Дени Вильнёв, Эрик Рот",
+            "actors": ["Тимоти Шаламе", "Ребекка Фергюсон", "Оскар Айзек"],
+            "synopsis": "Юный Пол Атрейдес вместе с семьёй прибывает на пустынную планету Арракис, чтобы взять под контроль добычу спайса — самого ценного вещества во вселенной.",
+            "trailerUrl": "https://www.youtube.com/embed/n9xhJrPXop4",
+            "posterUrl": "https://picsum.photos/seed/dune/300/450"
+        },
+        {
+            "id": 5,
+            "title": "Отель Гранд Будапешт",
+            "genre": "Комедия",
+            "ageRating": "16+",
+            "director": "Уэс Андерсон",
+            "screenwriter": "Уэс Андерсон",
+            "actors": ["Рэйф Файнс", "Тони Револори", "Сирша Ронан"],
+            "synopsis": "Консьерж легендарного отеля и его верный лобби-бой оказываются втянуты в историю с украденной картиной и семейным наследством.",
+            "trailerUrl": "https://www.youtube.com/embed/1Fg5iWmQjwk",
+            "posterUrl": "https://picsum.photos/seed/grandbudapest/300/450"
+        }
+    ],
+
+    "halls": [
+        {
+            "id": 1,
+            "name": "Белый зал",
+            "rows": 5,
+            "seatsPerRow": 10,
+            "grid": [
+                [2, 2, 1, 0, 0, 0, 0, 1, 2, 2],
+                [2, 1, 1, 0, 0, 0, 0, 1, 1, 2],
+                [null, 1, 0, 0, 0, 0, 0, 0, 1, null],
+                [null, 0, 0, 0, 0, 0, 0, 0, 0, null],
+                [null, null, 0, 0, 0, 0, 0, 0, null, null]
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Синий зал",
+            "rows": 6,
+            "seatsPerRow": 12,
+            "grid": [
+                [null, null, 2, 2, 1, 0, 0, 0, 0, 1, 2, 2],
+                [null, 2, 2, 1, 1, 0, 0, 0, 0, 1, 1, 2],
+                [null, 2, 1, 1, 0, 0, 0, 0, 0, 0, 1, 2],
+                [null, null, 1, 0, 0, 0, 0, 0, 0, 0, 1, null],
+                [null, null, 0, 0, 0, 0, 0, 0, 0, 0, 0, null],
+                [null, null, null, 0, 0, 0, 0, 0, 0, null, null, null]
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Красный зал",
+            "rows": 4,
+            "seatsPerRow": 6,
+            "grid": [
+                [null, 2, 2, 2, 2, null],
+                [2, 2, 2, 2, 2, 2],
+                [1, 1, 1, 1, 1, 1],
+                [null, null, 1, 1, null, null]
+            ]
+        }
+    ],
+
+    "sessions": [
+        {
+            "id": 1,
+            "movieId": 1,
+            "hallId": 1,
+            "datetime": "2026-11-10T18:00:00",
+            "basePrice": 400
+        },
+        {
+            "id": 2,
+            "movieId": 1,
+            "hallId": 2,
+            "datetime": "2026-11-10T21:30:00",
+            "basePrice": 450
+        },
+        {
+            "id": 3,
+            "movieId": 2,
+            "hallId": 1,
+            "datetime": "2026-11-11T19:00:00",
+            "basePrice": 400
+        },
+        {
+            "id": 4,
+            "movieId": 3,
+            "hallId": 2,
+            "datetime": "2026-11-11T20:00:00",
+            "basePrice": 500
+        },
+        {
+            "id": 5,
+            "movieId": 4,
+            "hallId": 3,
+            "datetime": "2026-11-12T18:30:00",
+            "basePrice": 700
+        },
+        {
+            "id": 6,
+            "movieId": 5,
+            "hallId": 1,
+            "datetime": "2026-11-12T16:00:00",
+            "basePrice": 350
+        },
+        {
+            "id": 7,
+            "movieId": 4,
+            "hallId": 2,
+            "datetime": "2026-11-13T21:00:00",
+            "basePrice": 500
+        }
+    ],
+
+    "orders": [
+        {
+            "id": 1,
+            "sessionId": 1,
+            "seats": [
+                { "row": 1, "seat": 1, "category": 2, "price": 640 },
+                { "row": 1, "seat": 2, "category": 2, "price": 640 }
+            ],
+            "total": 1280,
+            "customer": {
+                "name": "Иван Петров",
+                "email": "ivan@example.com",
+                "phone": "+79001234567"
+            },
+            "createdAt": "2026-11-08T10:15:00"
+        },
+        {
+            "id": 2,
+            "sessionId": 2,
+            "seats": [{ "row": 3, "seat": 5, "category": 0, "price": 450 }],
+            "total": 450,
+            "customer": {
+                "name": "Анна Смирнова",
+                "email": "anna@example.com",
+                "phone": "+79007654321"
+            },
+            "createdAt": "2026-11-08T11:40:00"
+        },
+        {
+            "id": 3,
+            "sessionId": 1,
+            "seats": [
+                { "row": 3, "seat": 3, "category": 0, "price": 400 },
+                { "row": 3, "seat": 4, "category": 0, "price": 400 },
+                { "row": 3, "seat": 5, "category": 0, "price": 400 }
+            ],
+            "total": 1200,
+            "customer": {
+                "name": "Сергей Иванов",
+                "email": "sergey@example.com",
+                "phone": "+79005553322"
+            },
+            "createdAt": "2026-11-08T12:20:00"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "api/sessions": "/sessions?_expand=movie&_expand=hall",
+  "api/sessions/:id": "/sessions/:id?_expand=movie&_expand=hall&_embed=orders",
+  "api/orders": "/orders",
+  "api/movies": "/movies",
+  "api/halls": "/halls"
+}
