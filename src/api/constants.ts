@@ -13,3 +13,4 @@ export const ACTORS = "/actors";
 export const HALLS = "/halls";
 export const SESSIONS = "/sessions";
 export const ORDERS = "/orders";
+export const AGE_RATINGS = "/age_ratings";

@@ -27,6 +27,7 @@ export interface Compliance {
 export type Genre = Compliance;
 export type Director = Compliance;
 export type Actor = Compliance;
+export type AgeRating = Compliance;
 
 export interface CategoryInfo {
     name: Category;
@@ -40,6 +41,7 @@ export interface Movie {
     directorId: number;
     screenwriterIds: number[];
     actorIds: number[];
+    ageRating: number
     synopsis: string;
     trailerUrl: string;
     posterUrl: string;

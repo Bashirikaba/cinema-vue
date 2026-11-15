@@ -1,4 +1,5 @@
 import { api, handleApiError } from "./client";
+import { AGE_RATINGS } from "./constants";
 import {
     Movie,
     MovieListItem,
@@ -62,5 +63,14 @@ export async function getMoviesByActor(actorId: number): Promise<Movie[]> {
         return data;
     } catch (error) {
         handleApiError(error, "getMoviesByActor");
+    }
+}
+
+export async function getMoviesByAgeRating(ageRatingId: number): Promise<Movie[]> {
+    try {
+        const { data } = await api.get<Movie[]>(`${AGE_RATINGS}/${ageRatingId}/movies`);
+        return data;
+    } catch (error) {
+        handleApiError(error, "getMoviesByAgeRating");
     }
 }
