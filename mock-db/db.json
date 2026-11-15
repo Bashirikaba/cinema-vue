@@ -2,19 +2,55 @@
     "categories": ["standard", "comfort", "premium"],
     "priceMultipliers": [1.0, 1.3, 1.6],
 
+    "genres": [
+        { "id": 1, "name": "Сай-фай" },
+        { "id": 2, "name": "Драма" },
+        { "id": 3, "name": "Комедия" },
+        { "id": 4, "name": "Триллер" },
+        { "id": 5, "name": "Приключения" }
+    ],
+
+    "actors": [
+        { "id": 1, "name": "Леонардо ДиКаприо" },
+        { "id": 2, "name": "Джозеф Гордон-Левитт" },
+        { "id": 3, "name": "Эллен Пейдж" },
+        { "id": 4, "name": "Хоакин Феникс" },
+        { "id": 5, "name": "Роберт Де Ниро" },
+        { "id": 6, "name": "Зази Битц" },
+        { "id": 7, "name": "Мэттью МакКонахи" },
+        { "id": 8, "name": "Энн Хэтэуэй" },
+        { "id": 9, "name": "Джессика Честейн" },
+        { "id": 10, "name": "Тимоти Шаламе" },
+        { "id": 11, "name": "Ребекка Фергюсон" },
+        { "id": 12, "name": "Оскар Айзек" },
+        { "id": 13, "name": "Рэйф Файнс" },
+        { "id": 14, "name": "Тони Револори" },
+        { "id": 15, "name": "Сирша Ронан" }
+    ],
+
+    "directors": [
+        { "id": 1, "name": "Кристофер Нолан" },
+        { "id": 2, "name": "Тодд Филлипс" },
+        { "id": 3, "name": "Дени Вильнёв" },
+        { "id": 4, "name": "Уэс Андерсон" }
+    ],
+
+    "ageRating": [
+        {"id":1, "name": "0+"},
+        {"id":2, "name": "6+"},
+        {"id":3, "name": "12+"},
+        {"id":4, "name": "18+"}
+    ],
+
     "movies": [
         {
             "id": 1,
             "title": "Начало",
-            "genre": "Сай-фай",
-            "ageRating": "12+",
-            "director": "Кристофер Нолан",
-            "screenwriter": "Кристофер Нолан",
-            "actors": [
-                "Леонардо ДиКаприо",
-                "Джозеф Гордон-Левитт",
-                "Эллен Пейдж"
-            ],
+            "genreId": 1,
+            "directorId": 1,
+            "screenwriterIds": [1],
+            "actorIds": [1, 2, 3],
+            "ageRating": 4,
             "synopsis": "Вор, крадущий секреты из снов, получает задание внедрить идею в разум бизнесмена. Но чем глубже он погружается, тем сильнее рискует потерять связь с реальностью.",
             "trailerUrl": "https://www.youtube.com/embed/YoHD9XEInc0",
             "posterUrl": "https://picsum.photos/seed/inception/300/450"
@@ -22,11 +58,11 @@
         {
             "id": 2,
             "title": "Джокер",
-            "genre": "Драма",
-            "ageRating": "18+",
-            "director": "Тодд Филлипс",
-            "screenwriter": "Тодд Филлипс, Скотт Сильвер",
-            "actors": ["Хоакин Феникс", "Роберт Де Ниро", "Зази Битц"],
+            "genreId": 2,
+            "directorId": 2,
+            "screenwriterIds": [2, 3],
+            "actorIds": [4, 5, 6],
+            "ageRating": 4,
             "synopsis": "История становления одного из самых известных злодеев комиксов — от неудачливого комика до символа хаоса в Готэме.",
             "trailerUrl": "https://www.youtube.com/embed/zAGVQLHvwOY",
             "posterUrl": "https://picsum.photos/seed/joker/300/450"
@@ -34,11 +70,11 @@
         {
             "id": 3,
             "title": "Интерстеллар",
-            "genre": "Сай-фай",
-            "ageRating": "12+",
-            "director": "Кристофер Нолан",
-            "screenwriter": "Джонатан Нолан, Кристофер Нолан",
-            "actors": ["Мэттью МакКонахи", "Энн Хэтэуэй", "Джессика Честейн"],
+            "genreId": 1,
+            "directorId": 1,
+            "screenwriterIds": [4, 1],
+            "actorIds": [7, 8, 9],
+            "ageRating": 3,
             "synopsis": "Группа исследователей отправляется сквозь червоточину в поисках нового дома для человечества, пока Земля становится непригодной для жизни.",
             "trailerUrl": "https://www.youtube.com/embed/zSWdZVtXT7E",
             "posterUrl": "https://picsum.photos/seed/interstellar/300/450"
@@ -46,11 +82,11 @@
         {
             "id": 4,
             "title": "Дюна",
-            "genre": "Сай-фай",
-            "ageRating": "16+",
-            "director": "Дени Вильнёв",
-            "screenwriter": "Джон Спэйтс, Дени Вильнёв, Эрик Рот",
-            "actors": ["Тимоти Шаламе", "Ребекка Фергюсон", "Оскар Айзек"],
+            "genreId": 1,
+            "directorId": 3,
+            "screenwriterIds": [5, 3, 6],
+            "actorIds": [10, 11, 12],
+            "ageRating": 3,
             "synopsis": "Юный Пол Атрейдес вместе с семьёй прибывает на пустынную планету Арракис, чтобы взять под контроль добычу спайса — самого ценного вещества во вселенной.",
             "trailerUrl": "https://www.youtube.com/embed/n9xhJrPXop4",
             "posterUrl": "https://picsum.photos/seed/dune/300/450"
@@ -58,11 +94,11 @@
         {
             "id": 5,
             "title": "Отель Гранд Будапешт",
-            "genre": "Комедия",
-            "ageRating": "16+",
-            "director": "Уэс Андерсон",
-            "screenwriter": "Уэс Андерсон",
-            "actors": ["Рэйф Файнс", "Тони Револори", "Сирша Ронан"],
+            "genreId": 3,
+            "directorId": 4,
+            "screenwriterIds": [4],
+            "actorIds": [13, 14, 15],
+            "ageRating": 2,
             "synopsis": "Консьерж легендарного отеля и его верный лобби-бой оказываются втянуты в историю с украденной картиной и семейным наследством.",
             "trailerUrl": "https://www.youtube.com/embed/1Fg5iWmQjwk",
             "posterUrl": "https://picsum.photos/seed/grandbudapest/300/450"
