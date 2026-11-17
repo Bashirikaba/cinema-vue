@@ -1,7 +1,7 @@
 import { Customer, Order, Seat} from "./types";
 
 export interface OrderCreateInput {
-    sessionId: number;
+    sessionId: string;
     seats: Array<Pick<Seat, "row" | "seat" | "category">>;
     customer: Customer;
 }

@@ -30,7 +30,7 @@ export async function getMovieList(): Promise<MovieListItem[]> {
     }
 }
 
-export async function getMovieById(id: number): Promise<Movie> {
+export async function getMovieById(id: string): Promise<Movie> {
     try {
         const { data } = await api.get<Movie>(`${MOVIES}/${id}`);
         return data;
@@ -39,7 +39,7 @@ export async function getMovieById(id: number): Promise<Movie> {
     }
 }
 
-export async function getMoviesByGenre(genreId: number): Promise<Movie[]> {
+export async function getMoviesByGenre(genreId: string): Promise<Movie[]> {
     try {
         const { data } = await api.get<Movie[]>(`${GENRES}/${genreId}/movies`);
         return data;
@@ -48,7 +48,7 @@ export async function getMoviesByGenre(genreId: number): Promise<Movie[]> {
     }
 }
 
-export async function getMoviesByDirector(directorId: number): Promise<Movie[]> {
+export async function getMoviesByDirector(directorId: string): Promise<Movie[]> {
     try {
         const { data } = await api.get<Movie[]>(`${DIRECTORS}/${directorId}/movies`);
         return data;
@@ -57,7 +57,7 @@ export async function getMoviesByDirector(directorId: number): Promise<Movie[]> 
     }
 }
 
-export async function getMoviesByActor(actorId: number): Promise<Movie[]> {
+export async function getMoviesByActor(actorId: string): Promise<Movie[]> {
     try {
         const { data } = await api.get<Movie[]>(`${ACTORS}/${actorId}/movies`);
         return data;
@@ -66,7 +66,7 @@ export async function getMoviesByActor(actorId: number): Promise<Movie[]> {
     }
 }
 
-export async function getMoviesByAgeRating(ageRatingId: number): Promise<Movie[]> {
+export async function getMoviesByAgeRating(ageRatingId: string): Promise<Movie[]> {
     try {
         const { data } = await api.get<Movie[]>(`${AGE_RATINGS}/${ageRatingId}/movies`);
         return data;

@@ -16,7 +16,7 @@ export async function getSessions(): Promise<Session[]> {
     }
 }
 
-export async function getSessionById(id: number): Promise<Session> {
+export async function getSessionById(id: string): Promise<Session> {
     try {
         const { data } = await api.get<Session>(`${SESSIONS}/${id}`);
         return data;
@@ -25,7 +25,7 @@ export async function getSessionById(id: number): Promise<Session> {
     }
 }
 
-export async function getSessionsByMovie(movieId: number): Promise<Session[]> {
+export async function getSessionsByMovie(movieId: string): Promise<Session[]> {
     try {
         const { data } = await api.get<Session[]>(`${MOVIES}/${movieId}/sessions`);
         return data;
@@ -34,7 +34,7 @@ export async function getSessionsByMovie(movieId: number): Promise<Session[]> {
     }
 }
 
-export async function getSessionsByHall(hallId: number): Promise<Session[]> {
+export async function getSessionsByHall(hallId: string): Promise<Session[]> {
     try {
         const { data } = await api.get<Session[]>(`${HALLS}/${hallId}/sessions`);
         return data;

@@ -20,7 +20,7 @@ export class ApiError extends Error {
 }
 
 export interface Compliance {
-    id: number;
+    id: string;
     name: string;
 }
 
@@ -35,10 +35,10 @@ export interface CategoryInfo {
 }
 
 export interface Movie {
-    id: number;
+    id: string;
     title: string;
-    genreId: number;
-    directorId: number;
+    genreId: string;
+    directorId: string;
     screenwriterIds: number[];
     actorIds: number[];
     ageRating: number
@@ -48,7 +48,7 @@ export interface Movie {
 }
 
 export interface Hall {
-    id: number;
+    id: string;
     name: string;
     rows: number;
     seatsPerRow: number;
@@ -56,9 +56,9 @@ export interface Hall {
 }
 
 export interface Session {
-    id: number;
-    movieId: number;
-    hallId: number;
+    id: string;
+    movieId: string;
+    hallId: string;
     datetime: string; 
     basePrice: number;
 }
@@ -77,8 +77,8 @@ export interface Seat {
 }
 
 export interface Order {
-    id: number;
-    sessionId: number;
+    id: string;
+    sessionId: string;
     seats: Seat[];
     total: number;
     customer: Customer;

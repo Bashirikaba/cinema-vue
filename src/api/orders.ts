@@ -18,7 +18,7 @@ export async function getOrders(): Promise<Order[]> {
     }
 }
 
-export async function getOrderById(id: number): Promise<Order> {
+export async function getOrderById(id: string): Promise<Order> {
     try {
         const { data } = await api.get<Order>(`${ORDERS}/${id}`);
         return data;
@@ -27,7 +27,7 @@ export async function getOrderById(id: number): Promise<Order> {
     }
 }
 
-export async function getOrdersBySession(sessionId: number): Promise<Order[]> {
+export async function getOrdersBySession(sessionId: string): Promise<Order[]> {
     try {
         const { data } = await api.get<Order[]>(
             `${SESSIONS}/${sessionId}/orders`,
@@ -51,7 +51,7 @@ export async function createOrder(input: OrderCreateInput): Promise<Order> {
 
 // DELETE
 
-export async function deleteOrder(id: number): Promise<void> {
+export async function deleteOrder(id: string): Promise<void> {
     try {
         await api.delete(`${ORDERS}/${id}`);
     } catch (error) {
