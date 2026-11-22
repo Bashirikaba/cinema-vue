@@ -1,3 +1,20 @@
 @import "../../node_modules/bootstrap/scss/functions";
 $primary: #ffffff;
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+.scroll-hidden {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+.divider-dot {
+    margin: 0 .5rem;
+}
+
+.divider-dot::after {
+    content: '·';
+}
