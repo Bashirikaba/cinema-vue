@@ -5,7 +5,9 @@ import SessionCard from '../session/SessionCard.vue';
 <template>
     <div>
         <div class="d-flex gap-3">
-            <img class="mx-auto object-fit-cover w-25" src="/uploads/posters/inception.webp" alt="Начало">
+            <div class="w-25">
+                <img class="mx-auto object-fit-cover w-100" src="/uploads/posters/inception.webp" alt="Начало">
+            </div>
             <div class="w-75 d-flex flex-column gap-2">
                 <p class="lh-1 mb-0 text-uppercase fw-bolder fs-1 text-decoration-none">Начало</p>
                 <p class="mb-0">Вор, крадущий секреты из снов, получает задание внедрить идею в разум бизнесмена. Но чем
